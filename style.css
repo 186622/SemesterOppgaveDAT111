@@ -1,0 +1,45 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background-color: #212121;
+}
+
+
+
+
+.nav-container {
+    display: flex;
+    color: #464646;
+
+}
+
+
+.nav-container ul {
+    display: flex;
+    list-style: none;
+    
+
+}
+
+
+.nav-container ul li {
+    margin: 0 10px;
+    
+}
+
+
+.nav-container ul li a {
+    text-decoration: none;
+    color: #464646;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+
+.nav-container ul li a:hover {
+    color: #fff;
+}
