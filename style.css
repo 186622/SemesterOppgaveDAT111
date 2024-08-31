@@ -21,8 +21,6 @@ body {
 
 
 
-
-
 .nav-container ul {
     display: flex;
     list-style: none;
@@ -55,3 +53,5 @@ body {
 .nav-container ul li a:hover {
     color: #fff;
 }
+
+
