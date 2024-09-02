@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     padding: 0;
@@ -7,51 +6,115 @@ body {
     background-color: #212121;
 }
 
-
-
-
 .nav-container {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between; /* Space between logo+h3 and the nav links */
     color: #464646;
     background-color: rgb(36, 36, 36);
-
+    padding: 0 20px; /* Add padding for spacing */
 }
 
+.logo-and-title {
+    display: flex;
+    align-items: center;
+}
 
+.logo-and-title h3 {
+    color: #fff;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 10px; /* Add some space between the logo and the text */
+}
 
+.nav {
+    flex-grow: 1; /* Allow nav to take up available space */
+    display: flex;
+    justify-content: center; /* Center the list items */
+}
 
-.nav-container ul {
+.nav ul {
     display: flex;
     list-style: none;
-    margin-top: 30px;
-    justify-content: center;
-
+    justify-content: center; /* Center the list items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
-
-.nav-container ul li {
-
+.nav ul li {
     margin: 0 10px;
     text-transform: uppercase;
-    
 }
 
-
-.nav-container ul li a {
+.nav ul li a {
     text-decoration: none;
     color: #464646;
     font-size: 18px;
     font-weight: 500;
     transition: 0.3s;
-
 }
 
-
-
-
-.nav-container ul li a:hover {
+.nav ul li a:hover {
     color: #fff;
 }
 
+.logo-and-title img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px; /* Adjust margin as needed */
+}
 
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    color: #464646;
+
+}
+
+.main-container h1 {
+    color: white;
+}
+
+.info-box-hr {
+    width: 400px;
+    text-align: start;
+}
+
+.info-box-vs {
+    width: 400px;
+    margin-left: 420px;
+    text-align: end;
+}
+
+.img-info-box {
+    position: absolute;
+    width: 630px;
+    height: 200px;
+    margin-left: 420px;
+}
+
+.parent-container {
+    text-align: center; /* Center the text within the container */
+    margin: 20px; /* Add some margin around the container */
+}
+
+.parent-container h1 {
+    margin-bottom: 10px; /* Add some space below the h1 */
+    font-size: 2em; /* Adjust the font size as needed */
+    color: white;
+}
+
+.parent-container p {
+    margin-top: 0; /* Remove any default margin above the p */
+    font-size: 1.2em; /* Adjust the font size as needed */
+    color: #464646;
+}
+
+.blue-text {
+    color: #02aeba;
+}
