@@ -85,7 +85,7 @@ body.light-mode .info-box-vs h1 {
     align-items: center;
     height: 80vh;
     color: #464646;
-
+	overflow: auto;
 }
 
 .main-container h1 {
