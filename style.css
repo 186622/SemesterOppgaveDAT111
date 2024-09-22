@@ -7,6 +7,7 @@ body {
 }
 
 
+
 body.light-mode {
     background-color: #fff;
     color: #000;
@@ -21,10 +22,15 @@ body.light-mode .info-box-vs h1 {
 .nav-container {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Space between logo+h3 and the nav links */
+    justify-content: space-between;
     color: #464646;
     background-color: rgb(36, 36, 36);
-    padding: 0 20px; /* Add padding for spacing */
+    padding: 0 20px;
+    position: fixed; /* Gjør navigasjonsbaren fastplassert */
+    top: 0; /* Plasser den øverst */
+    width: 100%; /* Sørg for at den dekker hele bredden */
+    z-index: 1000; /* Sørg for at den er over innholdet */
+    height: 60px; /* Sett høyden til navigasjonsbaren */
 }
 
 .logo-and-title {
@@ -83,9 +89,9 @@ body.light-mode .info-box-vs h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
     color: #464646;
-	overflow: auto;
+    padding-top: 80px; /* Juster høyden til å unngå overlapping (60px + ekstra plass) */
+    overflow: auto;
 }
 
 .main-container h1 {
