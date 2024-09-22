@@ -94,9 +94,13 @@ body.light-mode .info-box-vs h1 {
     overflow: auto;
 }
 
-.main-container h1 {
+.main-container h1,
+.main-container h2,
+.main-container h3 {
     color: white;
 }
+
+
 
 .info-box-hr {
     width: 400px;
