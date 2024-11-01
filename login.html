@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container-box">
+        <div class="login-box">
+            <h1 id="form-title">Logg inn</h1>
+            <form id="login-form">
+                <div class="textbox">
+                    <label for="username">Brukernavn</label>
+
+                    <input type="text" id="username" name="username" placeholder="Brukernavn" required>
+                </div>
+                <div class="textbox">
+                    <label for="password">Passord</label>
+                    <input type="password" id="password" name="password" placeholder="Passord" required>
+                </div>
+                <a href="home.html" class="btn" onclick="return validateForm()">Logg inn</a>
+                <button type="button" class="btn" onclick="changeTitle()">Registrer</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username === "" || password === "") {
+                alert("Brukernavn og Passord må fylles ut");
+                return false; 
+            }
+            return true; 
+        }
+
+        function changeTitle() {
+            document.getElementById('form-title').innerText = 'Registrer';
+        }
+    </script>
+</body>
+</html>
