@@ -171,13 +171,27 @@ body.light-mode .parent-container h1 {
 }
 
 
-/* Toggle Switch */
+
 .toggle-switch {
     position: relative;
-    display: inline-block;
     width: 60px;
     height: 34px;
+    display: inline-block;
 }
+
+.leige-btn {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+
+.leige-btn button {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
 
 .toggle-switch input {
     opacity: 0;
