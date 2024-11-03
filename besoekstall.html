@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVL Læringslab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="nav-container">
+        <div class="logo-and-title">
+            <img src="./img/images-removebg-preview.png" alt="HVL Logo" class="logo-img">
+            <h3>LÆRINGSLABBEN</h3>
+
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="home.html">Hjem</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="teknologi.html">Teknologi</a></li>
+                <li><a href="baerekraft.html" class="active">Bærekraft</a></li>
+                <li><a href="om.html">Om oss</a></li>
+                <li><a href="besoekstall.html">Besøkstall</a></li>
+            </ul>
+        </div>
+        <div class="leige-btn">
+            <button>LEIGE UTSTYR</button>
+            <div class="toggle-switch">
+                <input type="checkbox" id="dark-mode-toggle">
+                <label for="dark-mode-toggle" class="switch"></label>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="main-container">
+        <article>
+
+            <h1>Besøkstall</h1>
+            <p><label for="dag-velger">Valg av dag:</label>
+
+                <select name="dager" id="dag-velger">
+                    <option value="1">Mandag</option>
+                    <option value="2">Tirsdag</option>
+                    <option value="3">Onsdag</option>
+                    <option value="4">Torsdag</option>
+                    <option value="5">Fredag</option>
+                </select>
+            </p>
+            <p>
+                <img src="besokstall_plot_Mandag.png" alt="Graf mandag" id="besokstall-img">
+            </p>
+            <p id="besokstall-tekst"></p>
+
+
+        </article>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
