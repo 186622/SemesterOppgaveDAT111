@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Læringslabb</title>
+	<link rel="stylesheet" href="utleige.css">
+</head>
+
+<body>
+	<div class="nav-container">
+		<div class="logo-and-title">
+			<img src="img/images-removebg-preview.png" alt="" class="logo-img">
+			<h3>LÆRINGSLABBEN</h3>
+
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="home.html">Hjem</a></li>
+				<li><a href="kontakt.html">Kontakt</a></li>
+				<li><a href="teknologi.html">Teknologi</a></li>
+				<li><a href="baerekraft.html">Bærekraft</a></li>
+				<li><a href="om.html">Om oss</a></li>
+				<li><a href="besoekstall.html">Besøkstall</a></li>
+				<li><a href="utleige.html" class="active">Utleige</a></li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class="main-container">
+		<div class="filter-container">
+			<label for="location-filter">Velg Campus:</label>
+			<select id="location-filter" onchange="filterProducts()">
+				<option value="haugesund">Haugesund</option>
+				<option value="forde">Forde</option>
+				<option value="bergen">Bergen</option>
+			</select>
+			<label for="availability-filter">Tilgjengelighet:</label>
+			<select id="availability-filter" onchange="filterProducts()">
+				<option value="available">Tilgjengelig</option>
+				<option value="not-available">ikke Tilgjengelig</option>
+			</select>
+		</div>
+		<div class="utleige-container">
+			<div class="utleige-vindu haugesund forde available">
+				<img src="img/sdcard.png" alt="Product 1">
+				<h3>SD Card 200GB</h3>
+				<p>Leig SD kort med opp til 200GB lagring</p>
+			</div>
+			<div class="utleige-vindu haugesund available">
+				<img src="img/mario.png" alt="Product 2">
+				<h3>Super Mario Party</h3>
+				<p>Super Mario party for nintendo switch</p>
+			</div>
+			<div class="utleige-vindu haugesund forde not-available">
+				<img src="img/joycon.png" alt="Product 3">
+				<h3>Joy-Con Pair</h3>
+				<p>Joy-Coin for nintendo switch.</p>
+			</div>
+			<div class="utleige-vindu haugesund bergen available">
+				<img src="img/mariogrush.png" alt="Product 4">
+				<h3>Mario Gold Super Rush</h3>
+				<p>Mario Gold Super Rush for nintendo switch</p>
+			</div>
+			<div class="utleige-vindu haugesund bergen not-available">
+				<img src="img/overcooked.png" alt="Product 5">
+				<h3>Overcooked! All you can eat</h3>
+				<p>Nintendo Switch spill</p>
+			</div>
+			<div class="utleige-vindu haugesund bergen not-available">
+				<img src="img/kabel.png" alt="Product 6">
+				<h3>USB-C - USB-C</h3>
+				<p>2 meter lang USB-C til USB-C ledning</p>
+			</div>
+		</div>
+	</div>
+	
+	<script src="script.js"></script>
+</body>
+
+</html>

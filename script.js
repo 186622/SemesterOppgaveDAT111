@@ -55,3 +55,22 @@ if (besokstallBilde) {
     besokstallSelector.addEventListener('change', velgBilde);
     velgBilde();
 }
+
+function filterProducts() {
+    const locationFilter = document.getElementById('location-filter').value;
+    const availabilityFilter = document.getElementById('availability-filter').value;
+    const products = document.querySelectorAll('.utleige-vindu');
+
+    products.forEach(product => {
+        if (product.classList.contains(locationFilter) && product.classList.contains(availabilityFilter)) {
+            product.style.display = 'block';
+        } else {
+            product.style.display = 'none';
+        }
+    });
+}
+
+// Set default filters to 'haugesund' and 'available'
+document.getElementById('location-filter').value = 'haugesund';
+document.getElementById('availability-filter').value = 'tilgjenelig';
+filterProducts();

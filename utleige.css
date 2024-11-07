@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.nav-container {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.logo-and-title {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.logo-img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav ul li a.active {
+    border-bottom: 2px solid #fff;
+}
+
+.main-container {
+    padding: 20px;
+}
+
+.filter-container {
+    margin-bottom: 20px;
+}
+
+.filter-container label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.filter-container select {
+    padding: 5px;
+    font-size: 1em;
+}
+
+.utleige-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.utleige-vindu {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.utleige-vindu img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.utleige-vindu h3 {
+    margin: 15px 0 10px;
+    font-size: 1.2em;
+}
+
+.utleige-vindu p {
+    color: #666;
+}
