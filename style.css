@@ -6,12 +6,21 @@ body {
     background-color: #212121;
 }
 
+body a {
+	color: #1E90FF;
+}
+
+body.light-mode a {
+	color: #0000EE;
+}
+
 body.light-mode {
     background-color: #fff;
     color: #000;
 }
 
 body.light-mode .main-container h1,
+body.light-mode .main-container h2,
 body.light-mode .info-box-vs h1 {
     color: black;
 }
@@ -76,7 +85,7 @@ body.light-mode .info-box-vs h1 {
 
 .nav ul li a {
     text-decoration: none;
-    color: #464646;
+    color: #AFAFAF;
     font-size: 18px;
     font-weight: 500;
     transition: 0.3s;
@@ -152,25 +161,33 @@ body:not(.light-mode) .main-container {
     color: white;
 }
 
+.parent-container h2 {
+	color: white;
+}
+
 body.light-mode .parent-container h1 {
     color: black;
 }
 
+body.light-mode .parent-container h2 {
+    color: black;
+}
 
+body.light-mode .blue-text {
+	color: #01838c;
+}
 
 .parent-container p {
     margin-top: 0;
     /* Remove any default margin above the p */
     font-size: 1.2em;
     /* Adjust the font size as needed */
-    color: #464646;
+    color: #AFAFAF;
 }
 
 .blue-text {
     color: #02aeba;
 }
-
-
 
 .toggle-switch {
     position: relative;
